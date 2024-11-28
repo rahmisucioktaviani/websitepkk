@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pesan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        .parent {
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            width: 100%;
+            height: 100px;
+            background-color: lavender;
+            font-size: 11px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6c5ce7;
+            margin-top: 20px;
+            font-size: 36px;
+        }
+
+        .nav {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .nav div {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #74b9ff;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: #0984e3;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            flex-direction: column;  
+            align-items: center;     
+        }
+
+        .product {
+            background-color: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            height: 460px;
+            text-align: center;
+            transition: all 0.5s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product:hover {
+            transform: scale(1.1);
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .flavour {
+            background-color: #eed8ed;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            margin: 8px;
+            height: 30px;
+            width: 200px;
+            display: inline-block;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        h3 {
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        .buy-btn {
+            background-color: #74b9ff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            width: 80%;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .buy-btn:hover {
+            background-color: #0984e3;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1>RASAKAN NIKMATNYA PISANG DALAM SETIAP GULUNGAN!</h1>
+    </div>
+
+    <div class="nav">
+        <div><a href="#beli">BELI</a></div>
+        <div><a href="#products">Produk</a></div>
+    </div>
+
+    <div id="products" class="products">
+        <div  class="product">
+            <img src="https://i.ytimg.com/vi/GMCWfxSM48Q/sddefault.jpg" alt="Coklat Cake">
+            <div class="flavour flavour1">🍫 Coklat</div>
+            <div class="flavour flavour2">🍓 Strawberry</div>
+            <div class="flavour flavour3">🍫🍓 Mix</div>
+            <p>Rp 9.000</p>   
+            <a href="https://wa.me/6281545689318" target="_blank" class="buy-btn" id="beli">BUY</a>
+        </div>
+    </div>
+
+    <h3>AYO! PESAN SEKARANG JUGA!!!</h3>
+</body>
+</html>
