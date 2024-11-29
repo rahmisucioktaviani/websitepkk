@@ -21,13 +21,34 @@
             height: 100px;
             background-color: lavender;
             font-size: 11px;
+            animation: rubahwarna 2s infinite;
         }
+        @keyframes rubahwarna{
+            from{
+                background-color: lavender;
+            }
+            to{
+                background-color: #aea2c0;
+            }
+
+        }
+        
 
         h1 {
             text-align: center;
             color: #6c5ce7;
             margin-top: 20px;
             font-size: 26px;
+            animation: rubahwarnatulisan 2s infinite;
+        }
+        @keyframes rubahwarnatulisan {
+            from{
+                color:#6c5ce7
+            }
+            to{
+                color: white;
+            }
+           
         }
 
         .nav {
@@ -47,10 +68,13 @@
             border-radius: 5px;
             color: white;
             text-decoration: none;
+            
         }
 
         .nav a:hover {
             background-color: #0984e3;
+            transform: scale(1.1);
+            transition: all 0.5s;
         }
 
         .products {
@@ -100,6 +124,12 @@
             display: inline-block;
             text-align: center;
             line-height: 30px;
+            transition: background-color 5s infinite, color 5s infinite;
+        }
+        .flavour:hover{
+            
+            background-color: #8e71af;
+            color:white;
         }
 
         h3 {
