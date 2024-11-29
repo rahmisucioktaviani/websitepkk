@@ -1,206 +1,411 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Formulir Pesan</title>
+
     <style>
+
         body {
+
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+
+            background-color: #ede1f8;
+
             margin: 0;
+
             padding: 0;
+
             color: black;
+
         }
+
+
 
         .parent {
+
             display: flex; 
+
             justify-content: center; 
+
             align-items: center; 
+
             width: 100%;
+
             height: 100px;
+
             background-color: rgb(250, 198, 247);
+
             font-size: 11px;
+
             animation: rubahwarna 2s infinite;
+
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        @keyframes rubahwarna{
-            from{
-                background-color: rgb(250, 198, 247);
-            }
-            to{
-                background-color: #aea2c0;
-            }
 
         }
+
+        @keyframes rubahwarna{
+
+            from{
+
+                background-color: rgb(250, 198, 247);
+
+            }
+
+            to{
+
+                background-color: #aea2c0;
+
+            }
+
+
+
+        }
+
         
 
+
+
         h1 {
+
             text-align: center;
+
             color: #f1e3ef;
+
             margin-top: 20px;
+
             font-size: 26px;
+
             animation: rubahwarnatulisan 2s infinite;
+
         }
+
         @keyframes rubahwarnatulisan {
+
             from{
+
                 color:#f1e3ef;
+
             }
+
             to{
+
                 color: white;
+
             }
+
            
+
         }
+
+
 
         .nav {
+
             text-align: center;
+
             margin-top: 30px;
+
         }
+
+
 
         .nav div {
+
             display: inline-block;
+
             margin: 0 10px;
+
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
         }
+
+
 
         .nav a {
+
             display: inline-block;
+
             padding: 10px 20px;
+
             background-color: #d58ddf;
+
             border-radius: 5px;
+
             color: white;
+
             text-decoration: none;
+
             
+
         }
+
+
 
         .nav a:hover {
+
             background-color: #890a8d;
+
             transform: scale(1.1);
+
             transition: all 0.5s;
+
         }
+
         .rara{
 
+
+
         display: flex;
+
         flex-direction: column;
+
         align-items: center; 
+
         justify-content: center; 
+
         text-align: center; 
 
-        }
-        .rara h2 {
-        margin-bottom: 10px; 
-        margin-top:35px;
+
+
         }
 
-        .rara p {
-        margin-top: 0; 
-        margin-bottom: 25px;
+        .rara h2 {
+
+        margin-bottom: 10px; 
+
+        margin-top:35px;
+
         }
+
+
+
+        .rara p {
+
+        margin-top: 0; 
+
+        margin-bottom: 20px;
+
+        }
+
+
+
 
 
         .products {
+
             display: flex;
+
             justify-content: center;
+
             flex-wrap: wrap;
+
             margin-top: 0;
+
             flex-direction: column;  
+
             align-items: center;     
+
         }
+
+
 
         .product {
+
             background-color: white;
+
             margin: 0px;
+
             padding: 20px;
+
             border-radius: 8px;
+
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
             width: 280px;
+
             height: 400px;
+
             text-align: center;
+
             transition: all 0.5s;
+
             display: flex;
+
             flex-direction: column;
+
             justify-content: space-between;
+
             align-items: center;
+
         }
+
+
 
         .product:hover {
+
             transform: scale(1.1);
+
         }
+
+
 
         .product img {
+
             width: 100%;
+
             max-width: 200px;
+
             height: 230px;
+
             border-radius: 8px;
+
             margin-bottom: 15px;
+
         }
+
+
 
         .flavour {
+
             background-color: #eed8ed;
+
             color: rgb(0, 0, 0);
+
             border-radius: 10px;
+
             margin: 8px;
+
             height: 30px;
+
             width: 200px;
+
             display: inline-block;
+
             text-align: center;
+
             line-height: 30px;
+
             transition: background-color 5s infinite, color 5s infinite;
+
         }
+
         .flavour:hover{
+
             
+
             background-color: #8e71af;
+
             color:white;
+
         }
+
+
 
         h3 {
+
             text-align: center;
+
             margin: 40px auto;
+
             font-size:20px;
+
         }
+
+
 
         .buy-btn {
+
             background-color: #d58ddf;
+
             color: white;
+
             padding: 10px 20px;
+
             border-radius: 5px;
+
             cursor: pointer;
+
             text-decoration: none;
+
             width: 80%;
+
             margin-top: 10px;
+
             text-align: center;
+
         }
+
+
 
         .buy-btn:hover {
+
             background-color: #8d2088;
+
         }
+
     </style>
+
 </head>
+
 <body>
+
     <div class="parent">
+
         <h1>RASAKAN NIKMATNYA PISANG DALAM SETIAP GULUNGAN!</h1>
+
     </div>
+
+
 
     <div class="nav">
+
         <div><a href="#beli">BELI</a></div>
+
         <div><a href="#products">Produk</a></div>
+
     </div>
+
     <div class="rara">
+
      <h2> S.SAN</h2>
+
      <p> SIAP SANTAP<p>
+
      </div>
 
+
+
     <div id="products" class="products">
+
         <div  class="product">
+
             <img src="https://i.ytimg.com/vi/GMCWfxSM48Q/sddefault.jpg" alt="Coklat Cake">
+
             <div class="flavour flavour1">🍫 Coklat</div>
+
             <div class="flavour flavour2">🍓 Strawberry</div>
+
             <div class="flavour flavour3">🍫🍓 Mix</div>
+
             <p>Rp 9.000</p>   
+
             <a href="https://wa.me/6281545689318" target="_blank" class="buy-btn" id="beli">BUY</a>
+
         </div>
+
     </div>
 
+
+
     <h3>AYO! PESAN SEKARANG JUGA!!!</h3>
+
 </body>
+
 </html>
